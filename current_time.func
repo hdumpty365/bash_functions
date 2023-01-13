@@ -1,0 +1,4 @@
+function gettime()
+{
+	now=$(date +%Y_%m_%d_%H_%M)
+}
