@@ -1,0 +1,4 @@
+function erase_temp() {
+find . -type f -name "*.tmp" -delete
+find . -type f -name "*.temp" -delete
+}
