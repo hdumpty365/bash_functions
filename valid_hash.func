@@ -1,0 +1,14 @@
+function valid_hash() 
+{
+    local testhash=$1
+    if [[ $testhash =~ ^[a-f0-9]{32}$ ]]; 
+	then type="md5"
+    elif [[ $testhash =~ ^[a-f0-9]{40}$ ]]; 
+        then type="sha1"
+    elif [[ $testhash =~ ^[a-f0-9]{64}$ ]]; 
+	then type="sha256"
+    else
+        type="domain"
+    fi
+    #echo "[-] Hash is $type format"
+}
