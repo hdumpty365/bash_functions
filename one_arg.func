@@ -1,0 +1,10 @@
+function onearg() {
+#
+# Script must have at least ones arguement which is file to parse
+#
+if [ "$1" = "" ]
+then
+	echo "[-] Usage $0 <some file>"
+	exit
+fi
+}
