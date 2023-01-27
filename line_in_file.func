@@ -1,0 +1,5 @@
+#!/bin/bash
+#
+file=$1
+linesinfile=$(wc -l $file | awk -F' ' '{print $1}'
+exit
