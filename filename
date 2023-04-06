@@ -1,0 +1,6 @@
+createfile() {
+        echo "[-] Enter the IPv4 to check"
+        read target
+        now=$(date +%Y_%m_%d_%H_%M_%S)
+        filename=$(echo "shodan_${target}_${now}.out")
+}
